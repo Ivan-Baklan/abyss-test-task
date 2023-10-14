@@ -1,0 +1,80 @@
+.navigationContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f7fc;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  position: relative;
+  z-index: 10000;
+}
+.navigationContent .horizontalBottomLine {
+  position: absolute;
+  width: 90%;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  margin: auto;
+  top: 100%;
+  left: 5%;
+  z-index: 10;
+}
+.navigationContent h2 .countBadge__yellow {
+  border-radius: 15px;
+  color: white;
+  background-color: orange;
+  padding: 5px 10px;
+}
+.navigationContent_buttons {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navigationContent_buttons .listview_button {
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  color: white;
+  background-color: #6a76e2;
+}
+.navigationContent_buttons .centering_button {
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: white;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+  position: relative;
+}
+.navigationContent_buttons .centering_button:hover {
+  background-color: #c6cfda;
+}
+.navigationContent_buttons .centering_button:hover {
+  transition: fill 0.2s ease-in-out;
+}
+.navigationContent_buttons .centering_button:hover svg {
+  fill: white;
+}
+.navigationContent_buttons .centering_button .gotocenter_tooltip {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  top: 55px;
+  left: -5px;
+  background-color: #b8bfc1;
+  border-radius: 5px;
+}
+.navigationContent_buttons .centering_button .gotocenter_tooltip::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 15px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #b8bfc1 transparent;
+}
+.navigationContent_buttons .centering_button:hover .gotocenter_tooltip {
+  display: block;
+  width: 80px;
+  padding: 0.25rem;
+  color: black;
+}/*# sourceMappingURL=Navbar.module.css.map */
