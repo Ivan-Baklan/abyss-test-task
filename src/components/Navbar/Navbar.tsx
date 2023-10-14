@@ -9,14 +9,14 @@ interface NavbarProps {
 export default function Navbar({ treeViewRef }: NavbarProps) {
 
     const placeListCenter = () => {
-        console.log(treeViewRef.current?.offsetWidth, treeViewRef.current?.offsetHeight)
+
 
         const treeList = treeViewRef.current as HTMLUListElement
         const parentEllement = treeViewRef.current?.parentElement as HTMLDivElement
         treeList.style.left = `${parentEllement.clientWidth / 2 - treeList.clientWidth / 2}px`
         treeList.style.top = `${parentEllement.clientHeight / 2 - treeList.clientHeight / 2}px`
 
-        console.log(treeList.parentElement?.clientHeight, treeList.parentElement?.clientWidth)
+
     }
 
     return (

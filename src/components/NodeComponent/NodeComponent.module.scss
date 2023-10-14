@@ -1,0 +1,67 @@
+.childTreeNode {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .label_input {
+    border: 0.5px solid rgb(188, 188, 188);
+    height: 40px;
+    text-align: center;
+
+    &::placeholder {
+      color: #b1b0b1;
+    }
+  }
+
+  .edited {
+    color: white;
+  }
+
+  .editing {
+    color: black;
+  }
+
+  .first:disabled {
+    background-color: #ffa77f;
+  }
+  .second:disabled {
+    background-color: #1db3d9;
+  }
+  .third:disabled {
+    background-color: #b1bfc8;
+  }
+  .forth:disabled {
+    background-color: #091009;
+  }
+
+  .editing_block {
+    position: absolute;
+    left: 110%;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+    .node_btn {
+      align-self: center;
+      border: none;
+
+      width: 25px;
+      height: 25px;
+      border-radius: 1000px;
+      svg {
+        vertical-align: middle;
+      }
+      &__gray {
+        background-color: gray;
+      }
+      &__red {
+        background-color: #fc5a7a;
+      }
+      &__green {
+        background-color: #42c771;
+      }
+      &__yellow {
+        background-color: #fac739;
+      }
+    }
+  }
+}

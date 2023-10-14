@@ -1,0 +1,67 @@
+.childTreeNode {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.childTreeNode .label_input {
+  border: 0.5px solid rgb(188, 188, 188);
+  height: 40px;
+  text-align: center;
+}
+.childTreeNode .label_input::-moz-placeholder {
+  color: #b1b0b1;
+}
+.childTreeNode .label_input:-ms-input-placeholder {
+  color: #b1b0b1;
+}
+.childTreeNode .label_input::placeholder {
+  color: #b1b0b1;
+}
+.childTreeNode .edited {
+  color: white;
+}
+.childTreeNode .editing {
+  color: black;
+}
+.childTreeNode .first:disabled {
+  background-color: #ffa77f;
+}
+.childTreeNode .second:disabled {
+  background-color: #1db3d9;
+}
+.childTreeNode .third:disabled {
+  background-color: #b1bfc8;
+}
+.childTreeNode .forth:disabled {
+  background-color: #091009;
+}
+.childTreeNode .editing_block {
+  position: absolute;
+  left: 110%;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+.childTreeNode .editing_block .node_btn {
+  align-self: center;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 1000px;
+}
+.childTreeNode .editing_block .node_btn svg {
+  vertical-align: middle;
+}
+.childTreeNode .editing_block .node_btn__gray {
+  background-color: gray;
+}
+.childTreeNode .editing_block .node_btn__red {
+  background-color: #fc5a7a;
+}
+.childTreeNode .editing_block .node_btn__green {
+  background-color: #42c771;
+}
+.childTreeNode .editing_block .node_btn__yellow {
+  background-color: #fac739;
+}/*# sourceMappingURL=NodeComponent.module.css.map */

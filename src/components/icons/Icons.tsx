@@ -1,3 +1,6 @@
 export { default as CursorIcon } from './CursorIcon'
 export { default as MinusSign } from './MinusSign'
 export { default as PlusSign } from './PlusSign'
+export { default as Cross } from './Cross'
+export { default as Checkmark } from './Checkmark'
+export { default as Edit } from './Edit'
