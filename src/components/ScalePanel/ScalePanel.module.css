@@ -1,0 +1,90 @@
+.scalePanel {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  gap: 3px;
+  text-align: center;
+}
+.scalePanel .incDec_btn {
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+.scalePanel .incDec_btn:hover {
+  background-color: #c6cfda;
+  color: white;
+}
+.scalePanel .incDec_btn:hover svg {
+  stroke: white;
+  fill: white;
+}
+.scalePanel .dropdownScale {
+  position: relative;
+}
+.scalePanel .dropdownScale .scaleResult_btn {
+  height: 100%;
+  padding: 0 1.5rem 0 1.5rem;
+  border: none;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+  width: 85px;
+  align-self: center;
+  color: #c6ced0;
+}
+.scalePanel .dropdownScale .scaleResult_btn:hover {
+  background-color: #c6cfda;
+  color: white;
+}
+.scalePanel .dropdownScale .scaleResult_btn:hover svg {
+  stroke: white;
+  fill: white;
+}
+.scalePanel .dropdownScale .dropdown_menu {
+  margin: 0;
+  position: absolute;
+  z-index: 1000;
+  top: 54px;
+  box-shadow: 0px 0px 10px -3px rgb(66, 68, 90);
+}
+.scalePanel .dropdownScale .dropdown_menu li {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: flex-start;
+}
+.scalePanel .dropdownScale .dropdown_menu li .dropdown_menu__btn {
+  height: 100%;
+  padding: 0.2rem 0.75rem 0.2rem 0.2rem;
+  border: none;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+  width: 80px;
+  text-align: start;
+  border: none;
+  color: #b8bfc1;
+}
+.scalePanel .dropdownScale .dropdown_menu li .dropdown_menu__btn:hover {
+  background-color: #c6cfda;
+  color: white;
+}
+.scalePanel .dropdownScale .dropdown_menu li .dropdown_menu__btn:hover svg {
+  stroke: white;
+  fill: white;
+}
+.scalePanel .dropdownScale .dropdown_menu li .pressed {
+  position: relative;
+}
+.scalePanel .dropdownScale .dropdown_menu li .pressed::after {
+  content: "";
+  display: inline-block;
+  background-image: url("/public/checkmark.svg");
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  fill: transparent;
+  top: 0;
+  left: 40px;
+}/*# sourceMappingURL=ScalePanel.module.css.map */
