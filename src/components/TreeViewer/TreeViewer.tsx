@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { TreeComponent } from '../Components'
 import { TreeContext } from '../hooks'
 import PlusSign from '../icons/PlusSign'
@@ -13,7 +13,7 @@ interface TreeViewerProps {
 export default function TreeViewer({ treeViewRef }: TreeViewerProps) {
 
 
-    const { tree, addNode, removeNode } = useContext(TreeContext)
+    const { tree, addNode } = useContext(TreeContext)
 
     const [isMouseDown, setIsMouseDown] = useState(false)
     const [offset, setOffset] = useState({ x: 0, y: 0 })
@@ -22,6 +22,7 @@ export default function TreeViewer({ treeViewRef }: TreeViewerProps) {
         const x = (treeViewRef.current?.offsetLeft ?? 0) - e.clientX;
         const y = (treeViewRef.current?.offsetTop ?? 0) - e.clientY;
         setOffset({ x, y })
+        console.log(true)
     }
 
     const mouseUp = () => {
@@ -29,6 +30,8 @@ export default function TreeViewer({ treeViewRef }: TreeViewerProps) {
     }
 
     const movingHandle = (e: React.MouseEvent<HTMLUListElement>) => {
+
+        e.preventDefault();
         if (isMouseDown && treeViewRef.current !== undefined) {
 
             const treeList = treeViewRef.current as HTMLUListElement

@@ -19,21 +19,22 @@
   color: #b1b0b1;
 }
 .childTreeNode .edited {
+  pointer-events: none;
   color: white;
 }
 .childTreeNode .editing {
   color: black;
 }
-.childTreeNode .first:disabled {
+.childTreeNode .first {
   background-color: #ffa77f;
 }
-.childTreeNode .second:disabled {
+.childTreeNode .second {
   background-color: #1db3d9;
 }
-.childTreeNode .third:disabled {
+.childTreeNode .third {
   background-color: #b1bfc8;
 }
-.childTreeNode .forth:disabled {
+.childTreeNode .forth {
   background-color: #091009;
 }
 .childTreeNode .editing_block {
