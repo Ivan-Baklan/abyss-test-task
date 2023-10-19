@@ -27,7 +27,7 @@ export default function ScalePanel({ treeViewRef }: { treeViewRef: React.RefObje
         const treeList = treeViewRef.current as HTMLUListElement
 
         treeList.style.transform = `scale(${scaleResult})`
-    }, [scaleResult])
+    }, [scaleResult, treeViewRef])
 
     const incrementScale = () => {
         const currentScale = scales.map(scale => scale.value).indexOf(scaleResult)

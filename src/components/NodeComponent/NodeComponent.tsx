@@ -96,11 +96,13 @@ export default function NodeComponent({
                 type="text"
                 name="category"
                 value={categoryName}
-                onChange={(e) => { setCategoryName(e.target.value) }}
+                onChange={(e) => {
+                    setCategoryName(e.target.value)
+                }}
                 placeholder="Category name"
-                disabled={!isEdit.editing}
+
                 style={{}}
-                className={`${styles.label_input} ${colorOfDepth[depthLevel]} ${isEdit.editing ? styles.editing : styles.edited}`}
+                className={`${styles.label_input} ${isEdit.edited ? colorOfDepth[depthLevel] : ""} ${isEdit.editing ? styles.editing : styles.edited}`}
             />
             {editButtonsBuilder()}
         </div>
